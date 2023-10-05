@@ -12,15 +12,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         // Select the first h1 element on the page
-    let h1Element = document.querySelector('h1');
+    // let h1Element = document.querySelector('h1');
 
     // Get the computed style of the h1 element
-    let computedStyle = window.getComputedStyle(h1Element);
+    // let computedStyle = window.getComputedStyle(h1Element);
 
     // Get the font size from the computed style
-    let fontSize = computedStyle.getPropertyValue('font-size');
+    // let fontSize = computedStyle.getPropertyValue('font-size');
 
-    console.log(fontSize); // This will print the font size to the console
+    // console.log(fontSize); // This will print the font size to the console
 
 
 });
