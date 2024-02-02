@@ -1,0 +1,123 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+
+:root {
+    --main-bg-color: black;
+    --pantone-red: rgb(255,8,0);
+    --pantone-orange: rgb(255,95,0);
+    --text-color: white;
+    --subheading-color: rgba(255, 255, 255, 0.4);
+    --subheading-color: rgba(255, 255, 255, 0.45);
+    --step-0: clamp(1.5rem, 0.5rem + 5.3333vi, 2.5rem);
+    --step-subheading: clamp(1.5rem, 1rem + 2.6667vi, 2rem);
+}
+
+
+
+body{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+
+
+h1,h2,h3{
+    font-size: var(--step-0);
+    margin: 0;
+	padding: 0;
+    text-transform: uppercase;
+    transform: translate3d(-0.04em, 0, 0);
+}
+
+hgroup > *+*{
+    margin-top: 0.3em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.decoration{
+    background: linear-gradient( var(--pantone-red), var(--pantone-orange) );
+	border-radius: 6px;
+    top: 2vw;
+	bottom: 2vw;
+	left: 2vw;
+    right: calc((0.618 * 100%) + 2vw);
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+}
+
+/* T R B L */
+header{
+    padding: 4vmin 4vmin 4vmin calc((1 - 0.618) * 100%);
+    line-height: 0.975;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+hgroup{
+    flex-grow: 1;
+}
+
+.middle {
+    flex-grow:1;
+}
+
+.middle p {
+    margin-bottom: .2em;
+
+}
+.middle *{
+    font-family: "Ringside Regular Bold", "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: var(--step-subheading);
+    font-weight: 700;
+    color: var(--subheading-color);
+}
+
+.middle a:hover{
+    color: white;
+}
+
+
+footer *{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: var(--step-subheading);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+}
+
+footer a:hover{
+    color: var(--subheading-color)
+}
+
+
+
+@media (max-width: 899px) {
+    .decoration {
+      right: auto;
+      width: 60px;
+    }
+  }
+
+@media (max-width: 899px) {
+    header {
+        line-height: 1;
+        padding: 4vmin 4vmin 4vmin calc(60px + 4vmin);
+    }
+}
+
