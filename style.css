@@ -12,15 +12,11 @@
     --step-subheading: clamp(1.5rem, 1rem + 2.6667vi, 2rem);
 }
 
-
-
 body{
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     background-color: var(--main-bg-color);
     color: var(--text-color);
 }
-
-
 
 h1,h2,h3{
     font-size: var(--step-0);
@@ -42,7 +38,6 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
-
 
 .decoration{
     background: linear-gradient( var(--pantone-red), var(--pantone-orange) );
