@@ -73,15 +73,20 @@ hgroup{
 }
 
 .middle p {
-    margin-bottom: .2em;
+    margin-bottom: .5rem;
 
 }
+
 .middle *{
     font-family: "Ringside Regular Bold", "Helvetica Neue", Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: var(--step-subheading);
     font-weight: 700;
     color: var(--subheading-color);
+}
+
+.middle > ol > li{
+    padding-bottom: .25em;
 }
 
 .middle a:hover{
